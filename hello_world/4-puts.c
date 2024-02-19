@@ -1,10 +1,15 @@
-/* C program to illutrate the use of puts() function*/
 #include <stdio.h>
-int main()
+/**
+* main - Entry point for program
+*/
+int main(void)
 {
-  /* using puts to print hello world*/
- 
-    puts("\"Programming is like building a multilingual puzzle");
- 
-    return 0;
+/**
+puts - Function that print characters
+* @"Programming is like buildind a multilingual puzzle": String to be printed
+*
+* Return : 0 to stop the program
+*/
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
