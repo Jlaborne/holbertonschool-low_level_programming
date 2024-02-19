@@ -1,8 +1,8 @@
-// C program to illutrate the use of puts() function
+/* C program to illutrate the use of puts() function*/
 #include <stdio.h>
 int main()
 {
-    // using puts to print hello world
+  /* using puts to print hello world*/
  
     puts("\"Programming is like building a multilingual puzzle");
  
