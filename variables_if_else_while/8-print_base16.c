@@ -14,7 +14,7 @@ int main(void)
 	int x = 0;
 
 	for (x = 0; x < 10; x++)
-		if (i < 10)
+		if (x < 10)
 		{
 			putchar(x + '0');
 		}
