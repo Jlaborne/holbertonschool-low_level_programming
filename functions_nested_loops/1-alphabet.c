@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - main block
+ * Function print_alphabet that use _putchar
  * Description: Print the alphabet followed by a new line
  * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
 	char c;
 
@@ -14,5 +14,4 @@ int main(void)
 		_putchar(c);
 	}
 	_putchar('\n');
-	return (0);
 }
