@@ -1,13 +1,21 @@
 #include "main.h"
 
 /**
- * print_sign - check if a number is positive or negative
- *@n: the number to be checked
+ * print_last_digit - will print the last digit of a given number.
+ * @n: Number used to find the last digit.
  *
- *Return: 1 if n > 0. 0 if n = 0 and -1 if n < 0
+ * Description: will print the last digit of a given number. If the
+ * number is a negative the value will be return unsigned int.
+ *
+ * Return: last digit as int value.
  */
 int print_last_digit(int n)
 {
-	n = n % 10;
-	return (n);
+	n %= 10;
+	if (n < 0)
+	{
+		n *= -1;
+	}
+	_putchar('0' + n);
+	return (0);
 }
