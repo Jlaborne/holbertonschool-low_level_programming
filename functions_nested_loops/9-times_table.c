@@ -20,10 +20,10 @@ void times_table(void)
 
 			q = i * x;
 			if (x * q < 10)
-				_putchat(' ');
+				_putchar(' ');
 			else
-				_putchar((prod / 10) + '0');
-			_putchar((prod % 10)'0');
+				_putchar((q / 10) + '0');
+			_putchar((q % 10) + '0');
 		}
 		_putchar('\n');
 	}
