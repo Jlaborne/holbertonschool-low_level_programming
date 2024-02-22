@@ -1,33 +1,29 @@
 #include "main.h"
 
 /**
- * times_tables - Will print the 9 times tables
- *
+ * times_table - Will print the 9 times tables
  * Description: will print every times tables each times per line
- * format : x, x, ...
+ * Format: 0,..7,.14
  * Return: Always 0.
  */
 void times_table(void)
 {
-	int x;
-	int q;
+	int i, x, q;
 
-	for (x = 0; x < 10; x++)
+	for (i = 0; i < 10; i++)
 	{
-		for (q = 0; q < 10; q++)
+		_putchar ('0');
+		for (x = 1; q < 10; q++)
 		{
-			if (x * q < 10)
-			{
-				_putchar((x * q) + '0');
-			}
-			else
-			{
-				_putchar((x * q) / 10 + '0');
-				_putchar((x * q) % 10 + '0');
-			}
-			if (q < 9)
 			_putchar(',');
 			_putchar(' ');
+
+			q = i * x;
+			if (x * q < 10)
+				_putchat(' ');
+			else
+				_putchar((prod / 10) + '0');
+			_putchar((prod % 10)'0');
 		}
 		_putchar('\n');
 	}
