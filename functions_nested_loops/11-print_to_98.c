@@ -9,40 +9,47 @@
  */
 void print_to_98(int n)
 {
-	while (n < 98)
+	#include <stdio.h>
+int
+main ()
+{
+  int n = -283;
+  while (n != 98)
 	{
-		for (; n < 0; n++)
+	  if (n <= -100)
 		{
-			_putchar('n');
-
-			if (n <= -10)
-			{
-				_putchar ((n / 10) * -1 + '0');
-				_putchar ((n % 10) * -1 + '0');
-			}
-			else
-			{
-				_putchar (-1 * n + '0');
-			}
-			_putchar (',');
-			_putchar (' ');
+		  putchar ('-');
+		  //n = -n;
+		  putchar ((n * -1 / 10) / 10 + '0');
+		  putchar ((n * -1 / 10) % 10 + '0');
+		  putchar ((n * -1 /10 ))
+		  n++;
 		}
-
-		for (; n < 98; n++)
+	  if (n <= 10)
 		{
-			if (n >= 10)
-			{
-				_putchar ((n / 10) + '0');
-				_putchar ((n % 10) + '0');
-			}
-			else
-			{
-				_putchar (n + '0');
-			}
-			_putchar (',');
-			_putchar (' ');
+		  putchar ('-');
+		  putchar ((n * -1 / 10) + '0');
+		  putchar ((n * -1 % 10) + '0');
+		  n++;
+		}
+	  if (n >= 100)
+		{
+		  putchar ((n / 10) / 10 + '0');
+		  putchar ((n % 10) % 10 + '0');
+		  n++;
+		}
+	  if (n >= 10)
+		{
+		  putchar ((n / 10) + '0');
+		  putchar ((n % 10) + '0');
+		  n++;
+		}
+	  else
+		{
+		  putchar (n + '0');
 		}
 	}
-	_putchar ((n / 10) + '0');
-	_putchar ((n % 10) + '0');
+	putchar ('9');
+	putchar ('8');
+	return (0);
 }
