@@ -1,4 +1,11 @@
 #include <stdio.h>
+/**
+ * main - main block
+ * Description: Write a program that prints the numbers from 1 to 100
+ * But for multiples of three print Fizz instead of the number 
+ * and for the multiples of five print Buzz
+ * Return: Always 0.
+ */
 int main ()
 {
 	int i = 1;
@@ -25,5 +32,6 @@ int main ()
 		printf("%d ", i);
 		i++;
 	}
+	printf("\n");
 	return 0;
 }
