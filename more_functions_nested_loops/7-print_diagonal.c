@@ -12,7 +12,7 @@ void print_diagonal(int n)
 {
 	int y = 0;
 
-	while (y < n)
+	while (y < n && n > 0)
 	{
 		int i = 0;
 
@@ -24,5 +24,6 @@ void print_diagonal(int n)
 		_putchar('\n');
 		y++;
 	}
+	if (n < 0)
 	_putchar('\n');
 }
