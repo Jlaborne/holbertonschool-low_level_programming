@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts_half - puts_half
+ * *_strcpy - Copies a string to another string
  * @dest: copies the string in *src to *des
  * @src: destination of the copy
  * Description: Copies a sting to *dest from *src
@@ -11,7 +11,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
-	while(*(src + i) != '\0')
+	while (*(src + i) != '\0')
 	{
 		*(dest + i) = *(src + i);
 		i++;
