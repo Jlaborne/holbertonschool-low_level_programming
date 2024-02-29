@@ -17,9 +17,7 @@ int _atoi(char *s)
 		if (*s == '-')
 			signs *= -1;
 		if (*s >= '0' && *s <= '9')
-		{
 			sum = sum * 10 + (*s - 48);
-		}
 	}
 	if (signs == -1)
 		final = -sum;
