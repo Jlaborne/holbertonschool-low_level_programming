@@ -2,7 +2,7 @@
 
 /**
  * _atoi - function that convert a string to an integer
- * @s - string to convert
+ * @s: string to convert
  * Description: Convert a string to int
  * Return: The result of type int
  */
