@@ -1,36 +1,28 @@
 #include "main.h"
+#include "2-strlen.c"
 /**
- * cap_string - Capitalize all words of a string
- * @s: string
- * Description: Capitalize
- * Return: Always 0
+ * cap_string - capitalize all words
+ * @str: string param
+ * Return: string char
  */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-    while (*s != '\0')
-    {
-	if ((*s > 30 && *s < 35) || (*s > 8 && *s < 11) || (*s == 44))
+	int i;
+	for (i = 0; str[i] != '\0'; i++)
 	{
-	    s++;
-	    if (*s >= 'a' && *s <= 'z')
-                *s = *s - 32;
-	    s--;
+		if (i == 0)
+			if ((str[i] >= 'a' && str[i] <= 'z'))
+				str[i] = str[i] - 32;
+		if (str[i] == '\t' || str[i] == '\n' || str[i] == '.' || str[i] == ' ')
+		{
+			i++;
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				str[i] = str[i] - 32;
+				continue;
+			}
+			i--;
+		}
 	}
-	else if (*s == 59 || *s == 46 || *s == 63 || (*s > 39 && *s < 42))
-	{
-	    s++;
-	    if ((*s >= 'a' && *s <= 'z'))
-                *s = *s - 32;
-	    s--;
-	}
-	else if ((*s == 123) || (*s == 125) || (*s == 46))
-	{
-	    s++;
-	    if (*s >= 'a' && *s <= 'z')
-                *s = *s - 32;
-	    s--;
-	}
-	s++;
-    }
-    return (s);
+	return (str);
 }
