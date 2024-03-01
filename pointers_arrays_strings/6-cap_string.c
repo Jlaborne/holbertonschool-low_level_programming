@@ -7,8 +7,6 @@
  */
 char *cap_string(char *s)
 {
-    char *p = s;
-
     while (*s != '\0')
     {
 	if ((*s > 30 && *s < 35) || (*s > 8 && *s < 11) || (*s == 44))
@@ -29,6 +27,7 @@ char *cap_string(char *s)
 	    if (*s >= 'a' && *s <= 'z')
                 *s = *s - 32;
 	}
+	s++;
     }
-    return (p);
+    return (s);
 }
