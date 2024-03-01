@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * string_toupper - Change lowercase letter to uppercase
- * *: pointer
+ * *s: string
  * Description: minus 32 each lowercase letter ascii value
  * Return: Always 0
  */
