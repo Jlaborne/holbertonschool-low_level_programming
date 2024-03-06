@@ -6,16 +6,16 @@
  * @b: Size of memory
  * @n: Bytes to fill
  * Description: Fils memory with constant byte
- * Return: always
+ * Return: pointer to the memory area
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-    unsigned  int i = 0;
+	unsigned  int i = 0;
 
-    while (i < n)
-    {
-	*(s + i) = b;
-	i++;
-    }
-    return (s);
+	while (i < n)
+	{
+		*(s + i) = b;
+		i++;
+	}
+	return (s);
 }
