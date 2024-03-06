@@ -23,5 +23,5 @@ int prime_calc(int n, int guess)
 		return (1);
 	else if (n % guess == 0)
 		return (0);
-	return prime_calc(n, guess + 1);
+	return (prime_calc(n, guess + 1));
 }
