@@ -7,8 +7,9 @@
  * Description: Program that prints the length of the array
  * Return: always 0.
  */
-int main(int argc)
+int main(int argc, char *argv[])
 {
+	(void)argv;
 	printf("%d\n", argc - 1);
 	return (0);
 }
