@@ -5,7 +5,7 @@
  * @s: The string
  * @c: Character to search
  * Description: Search the specified character
- * Return: the pointer to first string found
+ * Return: the pointer to first matching character found or NULL
  */
 char *_strchr(char *s, char c)
 {
@@ -15,5 +15,5 @@ char *_strchr(char *s, char c)
 			return (s);
 		s++;
 	}
-	return (NULL);
+	return (s);
 }
