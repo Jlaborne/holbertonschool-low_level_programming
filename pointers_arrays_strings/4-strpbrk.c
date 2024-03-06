@@ -9,11 +9,11 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	if (s == NULL || accept == NULL)
-		return (NULL);
+	if (*s == '\0' || *accept == '\0')
+		return ('\0');
 
 	if (*accept == '\0')
-		return (NULL);
+		return ('\0');
 
 	while (*s != '\0')
 	{
@@ -27,5 +27,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		s++;
 	}
-	return (s);
+	return ('\0');
 }
