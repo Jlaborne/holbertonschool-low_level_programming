@@ -24,5 +24,5 @@ int square_calc(int n, int guess)
 		return (guess);
 	else if (guess * guess > n)
 		return (-1);
-	return (square_calc(n, guess +1));
+	return (square_calc(n, guess + 1));
 }
