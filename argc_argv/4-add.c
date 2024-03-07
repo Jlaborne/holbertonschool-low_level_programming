@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 		if (*endptr != '\0')
 		{
-			printf("Error");
+			printf("Error\n");
 			return (1);
 		}
 		else
