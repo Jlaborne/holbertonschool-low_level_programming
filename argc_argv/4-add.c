@@ -8,7 +8,7 @@
  * Description: Program that prints the sum of two integer
  * Return: always 1 if there is non digit
  */
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
 	int i, sum;
 
@@ -20,6 +20,7 @@ int main(int argc, char * argv[])
 	{
 		char *endptr;
 		long int ver_char = strtol(argv[i], &endptr, 10);
+
 		if (*endptr != '\0')
 		{
 			printf("Error");
