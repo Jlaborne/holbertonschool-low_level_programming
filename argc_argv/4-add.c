@@ -26,7 +26,8 @@ int main(int argc, char * argv[])
 			return (1);
 		}
 		else
-			sum += i
+			sum += ver_char;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
