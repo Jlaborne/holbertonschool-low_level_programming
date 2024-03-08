@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * print_diagsums - prints the sum of diagonals of a square matrix of integers
- * @s: string to analyze
- * @accept: characters to match
+ * @a: string to analyze
+ * @size: characters to match
  * Description: Analyze a string and return the number of bytes matching
  * Return: Returns the number of bytes
  */
