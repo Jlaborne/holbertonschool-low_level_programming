@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *create_array - Function that creat an array of char
- * @size: size of the memory
- * @c: the char
+ * _strdup - returns a pointer to a new string which is a duplicate of a string
+ * @str: the the string
  *
- * Return: A pointer to the array or NULL if it fails
+ * Return: A pointer to the string or NULL if it fails
  */
 char *_strdup(char *str)
 {
