@@ -25,5 +25,5 @@ char *str_concat(char *s1, char *s2)
 		dest[len2++] = s1[i];
 	for (i = 0; s2[i]; i++)
 		dest[len2++] = s2[i];
-	return (dest)
+	return (dest);
 }
