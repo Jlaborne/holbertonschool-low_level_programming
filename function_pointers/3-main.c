@@ -7,8 +7,8 @@ int main(int argc, char* argv[])
 	char *operator;
 
 	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	operator = argv[3];
+	num2 = atoi(argv[3]);
+	operator = argv[2];
 
 	if (argc != 4)
 	{
