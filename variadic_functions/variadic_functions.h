@@ -7,15 +7,15 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
 /**
- * struct op - Struct op
+ * typedef struct type_arg
  *
- * @op: The operator
- * @f: The function associated
+ * @char_type: Char that give a type
+ * @print: Function pointer to a function that print
  */
 typedef struct type_arg
 {
     char *first_char;
-    char *(*f)();
-} op_t;
+    void (*print)(va_list arg);
+} var_print;
 
 #endif
