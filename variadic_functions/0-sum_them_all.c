@@ -1,5 +1,5 @@
 #include <stdarg.h>
-/*
+/**
  * sum_them_all - sums all the parameters
  * @n: the number of parameters
  * Description: This function takes a variable number of arguments and
@@ -13,7 +13,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	if (n == 0)
 		return (0);
-	
+
 	i = sum = 0;
 
 	va_start(list, n);
@@ -22,6 +22,6 @@ int sum_them_all(const unsigned int n, ...)
 		sum += va_arg(list, unsigned int);
 		i++;
 	}
-	va_end (list);
+	va_end(list);
 	return (sum);
 }
