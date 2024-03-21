@@ -83,6 +83,7 @@ void print_all(const char * const format, ...)
 {
 	va_list list;
 	unsigned int i, j;
+	char *separator;
 	var_print function[] = {
 		{"c", print_char},
 		{"i", print_int},
@@ -90,6 +91,8 @@ void print_all(const char * const format, ...)
 		{"s", print_string},
 		{NULL, NULL}
 	};
+	separator = "";
+	i = j = 0;
 
 	va_start(list, format);
 
@@ -102,11 +105,13 @@ void print_all(const char * const format, ...)
 
 		if (function[j]._char != NULL)
 		{
+			printf("%s", separator);
 			function[j].print(list);
+			separator = ", ";
 		}
 
-		/**if (i < strlen(format) - 1 && function[j]._char != NULL)*/
-			printf(", ");
+		/**if (i < strlen(format) - 1 && function[j]._char != NULL)
+		   printf(", ");*/
 
 		i++;
 	}
