@@ -66,7 +66,7 @@ void print_all(const char * const format, ...)
 			function[j].print(list);
 		}
 
-		if (i < strlen(format) - 1)
+		if (i < strlen(format) - 1 && function[j]._char != NULL)
 			printf(", ");
 
 		i++;
