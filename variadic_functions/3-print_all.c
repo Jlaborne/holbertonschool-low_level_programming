@@ -22,7 +22,7 @@ void print_float(va_list arg)
 {
 	float f;
 
-	f = va_arg(arg, float);
+	f = va_arg(arg, double);
 	printf("%f", f);
 }
 
@@ -43,7 +43,7 @@ void print_string(va_list arg)
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	int i, j;
+	unsigned int i, j;
 	var_print function[] = {
 		{"c", print_char},
 		{"i", print_int},
@@ -66,7 +66,7 @@ void print_all(const char * const format, ...)
 			function[j].print(list);
 		}
 
-		if (i < strlen(format))
+		if (i < strlen(format) - 1)
 			printf(", ");
 
 		i++;
