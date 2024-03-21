@@ -68,7 +68,7 @@ void print_string(va_list arg)
 /**
  * print_all - Print a list of arguments based on a given format string.
  * @format: A format string indicating the types of the arguments to print.
- *           The format string can include the characters 'c', 'i', 'f', and 's'
+ *           Format string can include the characters 'c', 'i', 'f', and 's'
  *           representing character, integer, floating point number, and string
  *           respectively.
  *           Example: "cis" means character, integer, string.
@@ -84,7 +84,7 @@ void print_all(const char * const format, ...)
 	va_list list;
 	unsigned int i, j;
 	char *separator;
-	var_print function[] = {
+	var_print func[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
@@ -100,18 +100,15 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		while (function[j]._char != NULL && format[i] != *(function[j]._char))
+		while (func[j]._char != NULL && format[i] != *(func[j]._char))
 			j++;
 
-		if (function[j]._char != NULL)
+		if (func[j]._char != NULL)
 		{
 			printf("%s", separator);
-			function[j].print(list);
+			func[j].print(list);
 			separator = ", ";
 		}
-
-		/**if (i < strlen(format) - 1 && function[j]._char != NULL)
-		   printf(", ");*/
 
 		i++;
 	}
