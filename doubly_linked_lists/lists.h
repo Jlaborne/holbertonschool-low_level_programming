@@ -12,6 +12,7 @@
 typedef struct listint_s
 {
 	int n;
+	struct dlistint_s *prev;
 	struct listint_s *next;
 } listint_t;
 
