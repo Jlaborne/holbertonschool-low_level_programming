@@ -1,13 +1,15 @@
 #ifndef LISTS_H
 #define LISTS_H
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * struct listint_s - singly linked list
+ * struct dlistint_s - doubly linked list
  * @n: integer
+ * @prev: points to the previous node
  * @next: points to the next node
  *
- * Description: singly linked list node structure
+ * Description: doubly linked list node structure
  */
 typedef struct dlistint_s
 {
@@ -17,3 +19,5 @@ typedef struct dlistint_s
 } dlistint_t;
 
 size_t print_dlistint(const dlistint_t *h);
+
+#endif
