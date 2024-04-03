@@ -2,6 +2,7 @@
 #define LINKED_H
 #include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct linked_list - Typedef struct
@@ -18,5 +19,6 @@ typedef struct linked_list
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
+list_t *add_node(list_t **head, const char *str);
 
 #endif
