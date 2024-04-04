@@ -1,3 +1,4 @@
+#include "lists.h"
 /**
  * sum_dlistint - Add all data in a dlistint_t.
  * @head: A pointer to the head of the dlistint_t list.
